@@ -14,6 +14,9 @@
 		CAAB9E2A22E936840007ADFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAB9E2822E936840007ADFB /* LaunchScreen.storyboard */; };
 		CAAB9E3522E936840007ADFB /* AppServicesSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB9E3422E936840007ADFB /* AppServicesSwiftTests.swift */; };
 		CAAB9E4022E936840007ADFB /* AppServicesSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB9E3F22E936840007ADFB /* AppServicesSwiftUITests.swift */; };
+		CAAB9E4E22E936B00007ADFB /* CrashReporterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB9E4D22E936B00007ADFB /* CrashReporterService.swift */; };
+		CAAB9E5122E936E30007ADFB /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB9E5022E936E30007ADFB /* PersistenceService.swift */; };
+		CAAB9E5322E936F40007ADFB /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB9E5222E936F40007ADFB /* AnalyticsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		CAAB9E3B22E936840007ADFB /* AppServicesSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppServicesSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAAB9E3F22E936840007ADFB /* AppServicesSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServicesSwiftUITests.swift; sourceTree = "<group>"; };
 		CAAB9E4122E936840007ADFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAAB9E4D22E936B00007ADFB /* CrashReporterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashReporterService.swift; sourceTree = "<group>"; };
+		CAAB9E5022E936E30007ADFB /* PersistenceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		CAAB9E5222E936F40007ADFB /* AnalyticsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				CAAB9E1F22E936820007ADFB /* AppDelegate.swift */,
+				CAAB9E4F22E936B40007ADFB /* AppDelegate+Services */,
 				CAAB9E2122E936820007ADFB /* ViewController.swift */,
 				CAAB9E2322E936820007ADFB /* Main.storyboard */,
 				CAAB9E2622E936840007ADFB /* Assets.xcassets */,
@@ -123,6 +130,16 @@
 				CAAB9E4122E936840007ADFB /* Info.plist */,
 			);
 			path = AppServicesSwiftUITests;
+			sourceTree = "<group>";
+		};
+		CAAB9E4F22E936B40007ADFB /* AppDelegate+Services */ = {
+			isa = PBXGroup;
+			children = (
+				CAAB9E5222E936F40007ADFB /* AnalyticsService.swift */,
+				CAAB9E4D22E936B00007ADFB /* CrashReporterService.swift */,
+				CAAB9E5022E936E30007ADFB /* PersistenceService.swift */,
+			);
+			path = "AppDelegate+Services";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAAB9E2222E936820007ADFB /* ViewController.swift in Sources */,
+				CAAB9E5322E936F40007ADFB /* AnalyticsService.swift in Sources */,
+				CAAB9E5122E936E30007ADFB /* PersistenceService.swift in Sources */,
+				CAAB9E4E22E936B00007ADFB /* CrashReporterService.swift in Sources */,
 				CAAB9E2022E936820007ADFB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

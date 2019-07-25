@@ -12,10 +12,20 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var services: [UIApplicationDelegate] = [
+        PersistenceService(),
+        AnalyticsService(),
+        CrashReporterService()
+    ]
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // Here is an example how you pass a message to your services
+        for service in self.services {
+            let _ = service.application? (application, didFinishLaunchingWithOptions: launchOptions)
+        }
         return true
     }
 
